@@ -10,6 +10,7 @@ public class deteccionObjetivo : MonoBehaviour
     public Transform right;
 
     private MovimientoBarra mb;
+    public bool acertado;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +31,7 @@ public class deteccionObjetivo : MonoBehaviour
             float t = Mathf.PingPong(Time.time, 1f);
             transform.position = Vector3.Lerp(left.position, right.position, t);
             mb.speed += 0.3f;
+            acertado = true;
 
         }
     }
