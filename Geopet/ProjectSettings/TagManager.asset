@@ -9,6 +9,7 @@ TagManager:
   - objective
   - barra
   - Plataforma
+  - Muelle
   layers:
   - Default
   - TransparentFX

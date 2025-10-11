@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class saltoCubo : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 10f;
+    public float speed;
+    public float jumpForce;
+    public float jumpForceSpring;
     private Rigidbody2D rb2D;
 
     void Start()
@@ -27,6 +28,11 @@ public class saltoCubo : MonoBehaviour
             {
                 rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
+        }
+
+        if (collision.gameObject.CompareTag("Muelle"))
+        {
+            rb2D.AddForce(Vector2.up * jumpForceSpring, ForceMode2D.Impulse);
         }
     }
 }
