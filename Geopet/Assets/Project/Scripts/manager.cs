@@ -32,22 +32,22 @@ public class manager : MonoBehaviour
         incorrectGuesses = 0;
         correctGuesses = 0;
 
-        // Habilitar todos los botones del teclado
+        
         foreach (Button child in keyBoardContainer.GetComponentsInChildren<Button>())
         {
             child.interactable = true;
         }
 
-        // Limpiar las letras de la palabra anterior (NO el teclado)
+        
         foreach (Transform child in wordContainer.transform)
         {
             Destroy(child.gameObject);
         }
 
-        // Generar nueva palabra
+        
         word = generateWord().ToUpper();
 
-        // Crear contenedores para cada letra
+        
         foreach (char letter in word)
         {
             var temp = Instantiate(letterContainer, wordContainer.transform);
@@ -74,7 +74,7 @@ public class manager : MonoBehaviour
     {
         bool letterInWord = false;
 
-        // Deshabilitar el botón después de hacer clic
+        
         btn.interactable = false;
 
         for (int i = 0; i < word.Length; i++)
@@ -87,7 +87,7 @@ public class manager : MonoBehaviour
             }
         }
 
-        // Solo incrementar si la letra NO está en la palabra
+        
         if (!letterInWord)
         {
             incorrectGuesses++;
@@ -100,7 +100,7 @@ public class manager : MonoBehaviour
     {
         if (correctGuesses == word.Length)
         {
-            // Cambiar color a verde
+            
             foreach (TextMeshProUGUI tmp in wordContainer.GetComponentsInChildren<TextMeshProUGUI>())
             {
                 tmp.color = Color.green;
