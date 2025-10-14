@@ -166,6 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   esObjetoBueno: 1
-  puntos: 10
-  velocidadCaida: 3
+  puntos: 20
+  velocidadCaida: 6
   limiteBajo: -6

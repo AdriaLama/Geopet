@@ -4,8 +4,8 @@ public class FallingObject : MonoBehaviour
 {
     [Header("Configuración")]
     public bool esObjetoBueno = true; 
-    public int puntos = 10; 
-    public float velocidadCaida = 3f;
+    public int puntos = 10;
+    public float velocidadCaida;
 
     [Header("Límite de destrucción")]
     public float limiteBajo = -6f; 

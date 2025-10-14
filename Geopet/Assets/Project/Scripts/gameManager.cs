@@ -18,6 +18,24 @@ public class gameManager : MonoBehaviour
     {
         SceneManager.LoadScene("levelSelector");
     }
+
+    public void LoadSpain()
+    {
+        SceneManager.LoadScene("juegoEspaña");
+    }
+
+    public void LoadAustralia()
+    {
+        SceneManager.LoadScene("juegoAustralia");
+    }
+
+  
+    public void LoadJapan()
+    {
+        SceneManager.LoadScene("juegojapon");
+    }
+
+
     public void ExitGame()
     {
         Application.Quit();

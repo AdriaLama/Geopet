@@ -167,5 +167,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   esObjetoBueno: 1
   puntos: 10
-  velocidadCaida: 3
+  velocidadCaida: 4
   limiteBajo: -6

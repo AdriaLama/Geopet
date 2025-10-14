@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class movPlataformas : MonoBehaviour
 {
-    public int speed;
+    public float speed;
     public float timer;
     public bool isRight;
     public bool isLeft;

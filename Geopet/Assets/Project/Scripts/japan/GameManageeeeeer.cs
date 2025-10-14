@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     private int puntuacionActual = 0;
     public int vidas = 3;
     public TextMeshProUGUI textoVidas;
+    public GameObject panelFinal;
     void Awake()
     {
 
@@ -66,5 +68,18 @@ public class GameManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
         );
+    }
+
+    private void Update()
+    {
+        if (puntuacionActual >= 150)
+        {
+            panelFinal.SetActive(true);
+        }
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("levelSelector");
     }
 }
