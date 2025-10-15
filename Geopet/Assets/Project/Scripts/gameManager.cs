@@ -2,15 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
-    public int canSpain = 1;
-    public int canAustralia = 1;
-    public int canJapan = 1;
-    public static gameManager Instance;
-
-    void Start()
-    {
-        
-    }
+    public bool canSpain = true;
+    public bool canAustralia = true;
+    public bool canJapan = true;
 
     // Update is called once per frame
     void Update()
@@ -26,7 +20,7 @@ public class gameManager : MonoBehaviour
     public void LoadSpain()
     {
 
-        if (canSpain == 1)
+        if (canSpain)
         {
             SceneManager.LoadScene("juegoEspaña");
         }
@@ -36,7 +30,7 @@ public class gameManager : MonoBehaviour
 
     public void LoadAustralia()
     {
-        if (canAustralia == 1)
+        if (canAustralia)
         {
             SceneManager.LoadScene("juegoAustralia");
         }
@@ -45,7 +39,7 @@ public class gameManager : MonoBehaviour
 
     public void LoadJapan()
     {
-        if (canJapan == 1)
+        if (canJapan)
         {
             SceneManager.LoadScene("juegojapon");
         }

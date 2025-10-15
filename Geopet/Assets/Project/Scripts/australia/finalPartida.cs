@@ -24,10 +24,16 @@ public class finalPartida : MonoBehaviour
         }
     }
 
-    public void BackToMenu()
+    public void ahorcadoAustralia()
     {
         SceneManager.LoadScene("ahorcadoAustralia");
     }
+
+    public void ahorcadoJapon()
+    {
+        SceneManager.LoadScene("ahorcadoJapon");
+    }
+
 
 
 }

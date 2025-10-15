@@ -11,7 +11,7 @@ public class manager : MonoBehaviour
     [SerializeField] GameObject letterButton;
     [SerializeField] GameObject panel;
     [SerializeField] TextAsset possibleWord;
-    private gameManager gm;
+    public GameObject australiaButton;
 
     private string word;
     private int incorrectGuesses, correctGuesses;
@@ -21,7 +21,7 @@ public class manager : MonoBehaviour
         InitialiseButtons();
         InitialiseGame();
 
-        gm = FindAnyObjectByType<gameManager>();
+      
     }
 
     void InitialiseButtons()
@@ -119,7 +119,6 @@ public class manager : MonoBehaviour
     {
 
         SceneManager.LoadScene("levelSelector");
-
         
     }
 }
