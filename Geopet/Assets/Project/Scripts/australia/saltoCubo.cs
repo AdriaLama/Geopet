@@ -32,15 +32,16 @@ public class saltoCubo : MonoBehaviour
             }
         }
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
         if (collision.gameObject.CompareTag("Muelle"))
         {
-            
-            rb2D.AddForce(Vector2.up * jumpForceSpring, ForceMode2D.Impulse);
-            
+            ContactPoint2D contact = collision.contacts[0];
+
+            if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
+            {
+                rb2D.AddForce(Vector2.up * jumpForceSpring, ForceMode2D.Impulse);
+            }
         }
     }
+
+   
 }
