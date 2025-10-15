@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class finalPartida : MonoBehaviour
 {
     public GameObject panelFinal;
+    public GameObject panelTut;
     void Start()
     {
         
@@ -32,6 +33,12 @@ public class finalPartida : MonoBehaviour
     public void ahorcadoJapon()
     {
         SceneManager.LoadScene("ahorcadoJapon");
+    }
+
+    public void empezarPartida()
+    {
+        Time.timeScale = 1;
+        panelTut.SetActive(false);
     }
 
 

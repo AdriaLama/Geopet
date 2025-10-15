@@ -33,6 +33,7 @@ public class gameManager : MonoBehaviour
         if (canAustralia)
         {
             SceneManager.LoadScene("juegoAustralia");
+            Time.timeScale = 0;
         }
         
     }
@@ -50,6 +51,8 @@ public class gameManager : MonoBehaviour
 
     public void ExitGame()
     {
+        Time.timeScale = 1;
         Application.Quit();
+
     }
 }

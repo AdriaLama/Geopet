@@ -1,4 +1,3 @@
-using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 public class saltoCubo : MonoBehaviour
@@ -7,17 +6,28 @@ public class saltoCubo : MonoBehaviour
     public float jumpForce;
     public float jumpForceSpring;
     private Rigidbody2D rb2D;
+    private SpriteRenderer sr;
 
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         rb2D.linearVelocity = new Vector2(horizontal * speed, rb2D.linearVelocityY);
+
+        if (horizontal > 0)
+        {
+            sr.flipX = false;
+        }
+        else if (horizontal < 0)
+        {
+            sr.flipX = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
