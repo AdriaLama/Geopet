@@ -26,6 +26,8 @@ public class finalPartida : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("levelSelector");
+        SceneManager.LoadScene("ahorcadoAustralia");
     }
+
+
 }

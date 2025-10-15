@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -334,7 +334,7 @@ MonoBehaviour:
   keyBoardContainer: {fileID: 1029104209}
   letterContainer: {fileID: 4921239797683616519, guid: e58ef0a2fe310b643ae917ea3c5d06ae, type: 3}
   letterButton: {fileID: 1641045948702804498, guid: 46efe447d32fe0c4ab297bfac621ce25, type: 3}
-  possibleWord: {fileID: 4900000, guid: f8f3fa2818c2d3943b8acae108f6915e, type: 3}
+  possibleWord: {fileID: 4900000, guid: eb5b9e8107492e8459bd2ce653e50ee2, type: 3}
 --- !u!4 &900662210
 Transform:
   m_ObjectHideFlags: 0

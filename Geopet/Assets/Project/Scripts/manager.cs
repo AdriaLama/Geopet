@@ -66,8 +66,8 @@ public class manager : MonoBehaviour
     private string generateWord()
     {
         string[] wordList = possibleWord.text.Split("\n");
-        string line = wordList[Random.Range(0, wordList.Length - 1)];
-        return line.Substring(0, line.Length - 1);
+        string line = wordList[Random.Range(0, wordList.Length)];
+        return line.Substring(0, line.Length);
     }
 
     private void CheckLetter(string inputLetter, Button btn)
