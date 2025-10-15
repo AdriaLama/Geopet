@@ -42,6 +42,7 @@ public class gameManager : MonoBehaviour
         if (canJapan)
         {
             SceneManager.LoadScene("juegojapon");
+            Time.timeScale = 0;
         }
         
     }

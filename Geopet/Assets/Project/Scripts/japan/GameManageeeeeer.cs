@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public int vidas = 3;
     public TextMeshProUGUI textoVidas;
     public GameObject panelFinal;
+    public GameObject empezar;
+    public GameObject panelTut;
     void Awake()
     {
 
@@ -75,7 +77,14 @@ public class GameManager : MonoBehaviour
         if (puntuacionActual >= 150)
         {
             panelFinal.SetActive(true);
+            Time.timeScale = 0;
         }
+    }
+
+    public void empezarPartida()
+    {
+        Time.timeScale = 1;
+        panelTut.SetActive(false);
     }
 
     public void BackToMenu()

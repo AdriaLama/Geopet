@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 44e7cc1d0ea9d3241aee945085f3c715
+guid: 207871ed7a620f74cad2ef1c440097a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3181584220273251205
-    second: botonPanel_0
+      213: -4660848896373975150
+    second: tutorialJapon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: botonPanel_0
+      name: tutorialJapon_0
       rect:
         serializedVersion: 2
-        x: 172
-        y: 227
-        width: 547
-        height: 181
+        x: 819
+        y: 496
+        width: 1727
+        height: 1060
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5831068ddf1472c20800000000000000
-      internalID: 3181584220273251205
+      spriteID: 2979bdb7f96515fb0800000000000000
+      internalID: -4660848896373975150
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      botonPanel_0: 3181584220273251205
+      tutorialJapon_0: -4660848896373975150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
