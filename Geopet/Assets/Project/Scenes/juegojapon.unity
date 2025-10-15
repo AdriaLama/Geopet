@@ -1694,6 +1694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   cesta: {fileID: 1250756490}
+  offsetX: 4
 --- !u!50 &1524111861
 Rigidbody2D:
   serializedVersion: 5
