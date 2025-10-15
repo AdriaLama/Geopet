@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class manager : MonoBehaviour
 {
@@ -8,7 +9,9 @@ public class manager : MonoBehaviour
     [SerializeField] GameObject keyBoardContainer;
     [SerializeField] GameObject letterContainer;
     [SerializeField] GameObject letterButton;
+    [SerializeField] GameObject panel;
     [SerializeField] TextAsset possibleWord;
+    private gameManager gm;
 
     private string word;
     private int incorrectGuesses, correctGuesses;
@@ -17,6 +20,8 @@ public class manager : MonoBehaviour
     {
         InitialiseButtons();
         InitialiseGame();
+
+        gm = FindAnyObjectByType<gameManager>();
     }
 
     void InitialiseButtons()
@@ -104,8 +109,17 @@ public class manager : MonoBehaviour
             foreach (TextMeshProUGUI tmp in wordContainer.GetComponentsInChildren<TextMeshProUGUI>())
             {
                 tmp.color = Color.green;
+                panel.SetActive(true);
             }
             Invoke("InitialiseGame", 3f);
         }
+    }
+
+    public void BackToMenu()
+    {
+
+        SceneManager.LoadScene("levelSelector");
+
+        
     }
 }

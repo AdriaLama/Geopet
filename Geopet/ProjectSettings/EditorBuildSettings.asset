@@ -15,8 +15,17 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/juegoAustralia.unity
     guid: c8e796f01d1459045b57d3ac0431c5a7
   - enabled: 1
+    path: Assets/Project/Scenes/juegojapon.unity
+    guid: 8f281e88a59e7e34b9d39061814f376a
+  - enabled: 1
     path: "Assets/Project/Scenes/juegoEspa\xF1a.unity"
     guid: 40041eb9744ba914aa314102bde181f0
+  - enabled: 1
+    path: Assets/Project/Scenes/ahorcadoAustralia.unity
+    guid: 2e1e78741b773f2409ce17545c0a5ea5
+  - enabled: 1
+    path: Assets/Project/Scenes/ahorcadoJapon.unity
+    guid: b71bc997856a7be44a25f47cc81a3dcb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

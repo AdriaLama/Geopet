@@ -2,7 +2,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int canSpain = 1;
+    public int canAustralia = 1;
+    public int canJapan = 1;
+    public static gameManager Instance;
+
     void Start()
     {
         
@@ -21,18 +25,31 @@ public class gameManager : MonoBehaviour
 
     public void LoadSpain()
     {
-        SceneManager.LoadScene("juegoEspaña");
+
+        if (canSpain == 1)
+        {
+            SceneManager.LoadScene("juegoEspaña");
+        }
+
+        
     }
 
     public void LoadAustralia()
     {
-        SceneManager.LoadScene("juegoAustralia");
+        if (canAustralia == 1)
+        {
+            SceneManager.LoadScene("juegoAustralia");
+        }
+        
     }
 
-  
     public void LoadJapan()
     {
-        SceneManager.LoadScene("juegojapon");
+        if (canJapan == 1)
+        {
+            SceneManager.LoadScene("juegojapon");
+        }
+        
     }
 
 
