@@ -12,6 +12,7 @@ TagManager:
   - Muelle
   - Cesta
   - Final
+  - Acertar
   layers:
   - Default
   - TransparentFX
