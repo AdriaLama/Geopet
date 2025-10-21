@@ -808,7 +808,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8116100275353481221, guid: c07d39127d40da54bb93feb9ae516a29, type: 3}
+  m_Sprite: {fileID: -387767223598495688, guid: 1caa83848cce62e4585c39049854ab19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2254,7 +2254,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.042265415, y: 0.070758045}
+  m_Offset: {x: 0.042265415, y: -1.0612583}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2264,7 +2264,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 15.031989, y: 2.273641}
+  m_Size: {x: 15.031989, y: 4.5376744}
   m_EdgeRadius: 0
 --- !u!50 &403694595
 Rigidbody2D:
@@ -5458,10 +5458,10 @@ RectTransform:
   - {fileID: 1654153756}
   m_Father: {fileID: 132517755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.56700003, y: 0.078614645}
-  m_AnchorMax: {x: 0.94000006, y: 0.20980999}
-  m_AnchoredPosition: {x: -0.4953766, y: -0.24847412}
-  m_SizeDelta: {x: -0.0410614, y: -0.8335457}
+  m_AnchorMin: {x: 0.30900002, y: 0}
+  m_AnchorMax: {x: 0.69000006, y: 0.13961466}
+  m_AnchoredPosition: {x: 0.055999756, y: -1.4168091}
+  m_SizeDelta: {x: -2.0410614, y: -2.8335457}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084993538
 MonoBehaviour:
@@ -6422,7 +6422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AHORCADO
+  m_text: "SEG\xDCENT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8773,7 +8773,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.042265415, y: 0.070758045}
+  m_Offset: {x: 0.042265415, y: -0.987891}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8783,7 +8783,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 15.031989, y: 2.273641}
+  m_Size: {x: 15.031989, y: 4.390938}
   m_EdgeRadius: 0
 --- !u!50 &1534428554
 Rigidbody2D:
@@ -9125,7 +9125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HAS GANADO!!
+  m_text: "\xA1HAS GUANYAT!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9443,7 +9443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Empezar
+  m_text: "COMEN\xC7AR"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9470,12 +9470,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.05
+  m_fontSize: 20
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 20
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -12404,7 +12404,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.042265415, y: 0.070758045}
+  m_Offset: {x: 0.042265415, y: -0.7020267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12414,7 +12414,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 15.031989, y: 2.273641}
+  m_Size: {x: 15.031989, y: 3.8192108}
   m_EdgeRadius: 0
 --- !u!50 &2146333007
 Rigidbody2D:

@@ -5,6 +5,7 @@ public class gameManager : MonoBehaviour
     public bool canSpain = true;
     public bool canAustralia = true;
     public bool canJapan = true;
+    public bool canArgentina = true;
 
     // Update is called once per frame
     void Update()
@@ -23,6 +24,7 @@ public class gameManager : MonoBehaviour
         if (canSpain)
         {
             SceneManager.LoadScene("juegoEspaña");
+            Time.timeScale = 0;
         }
 
         
@@ -48,6 +50,17 @@ public class gameManager : MonoBehaviour
         
     }
 
+    public void LoadArgentina()
+    {
+
+        if (canArgentina)
+        {
+            SceneManager.LoadScene("juegoArgentina");
+            Time.timeScale = 0;
+        }
+
+
+    }
 
     public void ExitGame()
     {

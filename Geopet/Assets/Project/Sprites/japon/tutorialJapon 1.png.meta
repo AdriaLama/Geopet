@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 207871ed7a620f74cad2ef1c440097a7
+guid: fff3130ddab319b4f8235a19a5785e93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4660848896373975150
-    second: tutorialJapon_0
+      213: 6964354483524479526
+    second: tutorialJapon 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tutorialJapon_0
+      name: tutorialJapon 1_0
       rect:
         serializedVersion: 2
         x: 819
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2979bdb7f96515fb0800000000000000
-      internalID: -4660848896373975150
+      spriteID: 62a2068018b56a060800000000000000
+      internalID: 6964354483524479526
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tutorialJapon_0: -4660848896373975150
+      tutorialJapon 1_0: 6964354483524479526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

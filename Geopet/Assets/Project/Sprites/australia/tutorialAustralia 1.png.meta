@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c07d39127d40da54bb93feb9ae516a29
+guid: 1caa83848cce62e4585c39049854ab19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8116100275353481221
-    second: tutorialAustralia_0
+      213: -387767223598495688
+    second: tutorialAustralia 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tutorialAustralia_0
+      name: tutorialAustralia 1_0
       rect:
         serializedVersion: 2
         x: 819
-        y: 496
+        y: 421
         width: 1727
-        height: 1060
+        height: 1136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bff0b1eecc1dd5f80800000000000000
-      internalID: -8116100275353481221
+      spriteID: 8384fddb3cf5e9af0800000000000000
+      internalID: -387767223598495688
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tutorialAustralia_0: -8116100275353481221
+      tutorialAustralia 1_0: -387767223598495688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
