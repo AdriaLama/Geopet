@@ -4,15 +4,14 @@ public class CircleSpawner : MonoBehaviour
 {
     [Header("Spawning Settings")]
     public GameObject circlePrefab;
-    public float spawnInterval = 2.25f;    // Segundos entre spawns
+    public float spawnInterval = 2.25f;    
     public Vector2 spawnAreaMin = new Vector2(-8f, -4f);
     public Vector2 spawnAreaMax = new Vector2(8f, 4f);
 
     [Header("Difficulty")]
     public bool increaseDifficulty = true;
     public float minSpawnInterval = 0.3f;
-    public float difficultyIncreaseRate = 0.05f;  // Cada X segundos
-
+    public float difficultyIncreaseRate = 0.05f;  
     private float nextSpawnTime;
     private float gameStartTime;
 
@@ -29,7 +28,7 @@ public class CircleSpawner : MonoBehaviour
             SpawnCircle();
             nextSpawnTime = Time.time + spawnInterval;
 
-            // Aumentar dificultad progresivamente
+            
             if (increaseDifficulty)
             {
                 float elapsedTime = Time.time - gameStartTime;
@@ -49,7 +48,7 @@ public class CircleSpawner : MonoBehaviour
             return;
         }
 
-        // Posición aleatoria dentro del área
+        
         Vector2 randomPos = new Vector2(
             Random.Range(spawnAreaMin.x, spawnAreaMax.x),
             Random.Range(spawnAreaMin.y, spawnAreaMax.y)
@@ -59,7 +58,7 @@ public class CircleSpawner : MonoBehaviour
         circle.name = "HitCircle_" + Time.time;
     }
 
-    // Método para visualizar el área de spawn en el editor
+    
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;

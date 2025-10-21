@@ -26,11 +26,11 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore(int points, string judgment)
     {
-        // Calcular score con multiplicador de combo
-        int comboMultiplier = Mathf.Min(combo / 10 + 1, 4);  // Max 4x
+        
+        int comboMultiplier = Mathf.Min(combo / 10 + 1, 4);  
         score += points * comboMultiplier;
 
-        // Actualizar combo
+        
         if (points > 0)
         {
             combo++;
@@ -42,7 +42,7 @@ public class ScoreManager : MonoBehaviour
             combo = 0;
         }
 
-        // Actualizar estadísticas
+        
         switch (judgment)
         {
             case "PERFECT!":
@@ -71,7 +71,7 @@ public class ScoreManager : MonoBehaviour
         {
             comboText.text = combo > 0 ? combo + "x" : "";
 
-            // Cambiar color del combo según su tamaño
+            
             if (combo >= 50)
                 comboText.color = Color.magenta;
             else if (combo >= 20)
