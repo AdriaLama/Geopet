@@ -27,7 +27,6 @@ public class LanzarBola : MonoBehaviour
 
         Vector2 endPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (endPos - startPos).normalized;
-
         rb.linearVelocity = direction * speed;
         isDragging = false;
         isMoving = true;
@@ -40,7 +39,10 @@ public class LanzarBola : MonoBehaviour
             transform.localScale -= Vector3.one * shrinkRate * Time.deltaTime;
 
             if (transform.localScale.x < 0.1f)
+            {
                 transform.localScale = new Vector3(0.1f, 0.1f, 1f);
+            }
+                
         }
     }
 

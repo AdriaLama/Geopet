@@ -7,7 +7,7 @@ public class movAcertar : MonoBehaviour
     private int direction = 1;
     void Start()
     {
-
+        
     }
 
 
