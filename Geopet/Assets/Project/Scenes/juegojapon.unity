@@ -1055,7 +1055,7 @@ MonoBehaviour:
   - {fileID: 7404442375465919192, guid: a0bd70bdcd23ad740986cd58206206e6, type: 3}
   - {fileID: 3750724496977750489, guid: 7a1afe06bfb2d5e41ada62b0fd8b6d20, type: 3}
   objetoMalo: {fileID: 8659403395244781132, guid: e196f01f1d68efa43bfa1c69e9559cf0, type: 3}
-  tiempoEntreSpawns: 2.5
+  tiempoEntreSpawns: 1
   rangoX: 8
   alturaSpawn: 6
   probabilidadObjetoMalo: 0.3

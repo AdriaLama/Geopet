@@ -31,6 +31,12 @@ public class GameManager : MonoBehaviour
     {
         puntuacionActual += puntos;
 
+        if (puntuacionActual < 0)
+        {
+            puntuacionActual = 0;
+        }
+       
+
         ActualizarUI();
     }
     void ActualizarUI()
@@ -44,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (puntuacionActual >= 150)
+        if (puntuacionActual >= 250)
         {
             panelFinal.SetActive(true);
             Time.timeScale = 0;
