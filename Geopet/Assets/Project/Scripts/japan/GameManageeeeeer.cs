@@ -56,7 +56,10 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
         }
     }
-
+    public void ahorcadoJapon()
+    {
+        SceneManager.LoadScene("ahorcadoJapon");
+    }
     public void empezarPartida()
     {
         Time.timeScale = 1;

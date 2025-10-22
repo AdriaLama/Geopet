@@ -835,7 +835,6 @@ GameObject:
   m_Component:
   - component: {fileID: 560713210}
   - component: {fileID: 560713211}
-  - component: {fileID: 560713212}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -874,20 +873,6 @@ MonoBehaviour:
   panelFinal: {fileID: 1746211056}
   empezar: {fileID: 1921252521}
   panelTut: {fileID: 2093705502}
---- !u!114 &560713212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560713208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e22f9d90939844e819f9a9cf9d802f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelFinal: {fileID: 0}
-  panelTut: {fileID: 0}
 --- !u!1 &608967528
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,8 +956,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 560713212}
-        m_TargetAssemblyTypeName: finalPartida, Assembly-CSharp
+      - m_Target: {fileID: 560713211}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ahorcadoJapon
         m_Mode: 1
         m_Arguments:

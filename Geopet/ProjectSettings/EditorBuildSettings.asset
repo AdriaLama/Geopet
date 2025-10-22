@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/ahorcadoAustralia.unity
     guid: 2e1e78741b773f2409ce17545c0a5ea5
   - enabled: 1
+    path: "Assets/Project/Scenes/ahorcadoEspa\xF1a.unity"
+    guid: 8012bf5426f5b744cba7ae8a4d1dd5f3
+  - enabled: 1
+    path: Assets/Project/Scenes/ahorcadoArgentina.unity
+    guid: 3601f87e80cf0484e86ee51c30d4c218
+  - enabled: 1
     path: Assets/Project/Scenes/ahorcadoJapon.unity
     guid: b71bc997856a7be44a25f47cc81a3dcb
   - enabled: 1

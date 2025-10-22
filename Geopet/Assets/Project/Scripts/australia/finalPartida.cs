@@ -30,10 +30,6 @@ public class finalPartida : MonoBehaviour
         SceneManager.LoadScene("ahorcadoAustralia");
     }
 
-    public void ahorcadoJapon()
-    {
-        SceneManager.LoadScene("ahorcadoJapon");
-    }
 
     public void empezarPartida()
     {
