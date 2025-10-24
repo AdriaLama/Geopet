@@ -1,9 +1,9 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-public class GameManager : MonoBehaviour
+public class JaponGameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static JaponGameManager instance;
     [Header("UI")]
     public TextMeshProUGUI textoPuntuacion;
     [Header("Puntuación")]

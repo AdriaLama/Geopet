@@ -6,17 +6,34 @@ public class gameManager : MonoBehaviour
     public bool canAustralia = true;
     public bool canJapan = true;
     public bool canArgentina = true;
+    public static gameManager Instance;
 
-    // Update is called once per frame
+    public int totalCoins = 0;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    
     void Update()
     {
         
     }
 
-    public void LoadMap()
+    public void AddCoins(int amount)
     {
-        SceneManager.LoadScene("levelSelector");
+        totalCoins += amount;
     }
+
 
     public void LoadSpain()
     {
@@ -62,10 +79,5 @@ public class gameManager : MonoBehaviour
 
     }
 
-    public void ExitGame()
-    {
-        Time.timeScale = 1;
-        Application.Quit();
-
-    }
+  
 }

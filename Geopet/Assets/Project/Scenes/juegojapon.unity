@@ -344,7 +344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.27123722, y: 0.48600003}
   m_AnchorMax: {x: 0.7551752, y: 0.7187098}
-  m_AnchoredPosition: {x: 0, y: 0.79999924}
+  m_AnchoredPosition: {x: 0, y: 0.80000305}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337790503
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.35
+  m_fontSize: 38.15
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -957,7 +957,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 560713211}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: JaponGameManager, Assembly-CSharp
         m_MethodName: ahorcadoJapon
         m_Mode: 1
         m_Arguments:
@@ -1039,6 +1039,7 @@ MonoBehaviour:
   - {fileID: 8165204033440081569, guid: b47c044e2334821418af406a72d15741, type: 3}
   - {fileID: 7404442375465919192, guid: a0bd70bdcd23ad740986cd58206206e6, type: 3}
   - {fileID: 3750724496977750489, guid: 7a1afe06bfb2d5e41ada62b0fd8b6d20, type: 3}
+  - {fileID: 8157572374105684191, guid: ba2a3aeaa85c5724d8c39271a029ac68, type: 3}
   objetoMalo: {fileID: 8659403395244781132, guid: e196f01f1d68efa43bfa1c69e9559cf0, type: 3}
   tiempoEntreSpawns: 1
   rangoX: 8
@@ -1755,7 +1756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23525001, y: 0.28311107}
   m_AnchorMax: {x: 0.7635001, y: 0.7736666}
-  m_AnchoredPosition: {x: 0.45199585, y: 1.1999817}
+  m_AnchoredPosition: {x: 0.45196533, y: 1.1999817}
   m_SizeDelta: {x: -8.07782, y: -5.4690857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746211058
@@ -2016,7 +2017,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 560713211}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: JaponGameManager, Assembly-CSharp
         m_MethodName: empezarPartida
         m_Mode: 1
         m_Arguments:

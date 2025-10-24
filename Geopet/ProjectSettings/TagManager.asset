@@ -14,6 +14,7 @@ TagManager:
   - Final
   - Acertar
   - Porteria
+  - Moneda
   layers:
   - Default
   - TransparentFX
