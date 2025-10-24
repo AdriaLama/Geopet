@@ -659,8 +659,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 419789714}
-        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+      - m_Target: {fileID: 2032376083}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: LoadArgentina
         m_Mode: 1
         m_Arguments:
@@ -738,10 +738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21349b01f0b0b74fbec9f1c5af07068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSpain: 1
-  canAustralia: 1
-  canJapan: 1
-  canArgentina: 1
+  totalCoins: 0
 --- !u!4 &419789715
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,8 +1109,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 419789714}
-        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+      - m_Target: {fileID: 2032376083}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: LoadAustralia
         m_Mode: 1
         m_Arguments:
@@ -1288,7 +1285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.3899231}
+  m_AnchoredPosition: {x: 0, y: -0.38989258}
   m_SizeDelta: {x: 0, y: 0.7799988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378422650
@@ -1412,8 +1409,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 419789714}
-        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+      - m_Target: {fileID: 2032376083}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: LoadSpain
         m_Mode: 1
         m_Arguments:
@@ -1545,8 +1542,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 419789714}
-        m_TargetAssemblyTypeName: gameManager, Assembly-CSharp
+      - m_Target: {fileID: 2032376083}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: LoadJapan
         m_Mode: 1
         m_Arguments:
@@ -1595,6 +1592,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614700348}
   m_CullTransparentMesh: 1
+--- !u!1 &2032376082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032376084}
+  - component: {fileID: 2032376083}
+  m_Layer: 0
+  m_Name: SceneManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032376083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032376082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dece93c6c8c3a4db6488cd25917b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSpain: 1
+  canAustralia: 1
+  canJapan: 1
+  canArgentina: 1
+--- !u!4 &2032376084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032376082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1005.1752, y: 547.2904, z: -4.8716154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1603,3 +1648,4 @@ SceneRoots:
   - {fileID: 59300221}
   - {fileID: 275808400}
   - {fileID: 419789715}
+  - {fileID: 2032376084}
