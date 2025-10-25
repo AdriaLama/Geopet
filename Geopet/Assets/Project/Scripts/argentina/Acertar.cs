@@ -7,13 +7,15 @@ public class Acertar : MonoBehaviour
     public int score = 0;
     private textoScore ts;
     private movAcertar ma;
+    private generarMoneda gm; 
+
     void Start()
     {
         lb = FindFirstObjectByType<LanzarBola>();
         rb = GetComponent<Rigidbody2D>();
         ts = FindFirstObjectByType<textoScore>();
         ma = FindFirstObjectByType<movAcertar>();
-        
+        gm = FindFirstObjectByType<generarMoneda>();
     }
 
 
@@ -32,6 +34,14 @@ public class Acertar : MonoBehaviour
 
             ts.score++;
             ma.speed += 0.5f;
+            gm.Generar();
+
+            if(gm.isMoneda)
+            {
+                gameManager.Instance.AddCoins(5);
+                gm.isMoneda = false;
+            }
+
 
         }
         if (collision.gameObject.CompareTag("Porteria"))
@@ -43,6 +53,7 @@ public class Acertar : MonoBehaviour
 
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
+            gm.Generar();
         }
 
     }
