@@ -7,6 +7,7 @@ public class SceneManagement : MonoBehaviour
     public bool canAustralia = true;
     public bool canJapan = true;
     public bool canArgentina = true;
+
     void Start()
     {
 
@@ -17,6 +18,8 @@ public class SceneManagement : MonoBehaviour
     {
 
     }
+
+
 
     public void LoadSpain()
     {
