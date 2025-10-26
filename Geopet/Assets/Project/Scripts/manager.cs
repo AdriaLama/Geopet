@@ -12,6 +12,8 @@ public class manager : MonoBehaviour
     [SerializeField] GameObject panel;
     [SerializeField] TextAsset possibleWord;
     public GameObject australiaButton;
+    
+    
 
     private string word;
     private int incorrectGuesses, correctGuesses;
@@ -21,7 +23,7 @@ public class manager : MonoBehaviour
         InitialiseButtons();
         InitialiseGame();
 
-      
+        
     }
 
     void InitialiseButtons()
@@ -117,8 +119,44 @@ public class manager : MonoBehaviour
 
     public void BackToMenu()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
 
-        SceneManager.LoadScene("levelSelector");
+        if (currentScene == "ahorcadoEspaña")
+        {
+
+            PlayerPrefs.SetInt("ahorcadoEspaña", 1);
+
+            
+        }
+        if (currentScene == "ahorcadoJapon")
+        {
+
+            PlayerPrefs.SetInt("ahorcadoJapon", 1);
+
+            
+        }
+        if (currentScene == "ahorcadoArgentina")
+        {
+
+            PlayerPrefs.SetInt("ahorcadoArgentina", 1);
+
+            
+        }
+        if (currentScene == "ahorcadoItalia")
+        {
+
+            PlayerPrefs.SetInt("ahorcadoItalia", 1);
+
+            
+        }
+        if (currentScene == "ahorcadoAustralia")
+        {
+
+            PlayerPrefs.SetInt("ahorcadoAustralia", 1);
+
+            
+        }
         
+        SceneManager.LoadScene("levelSelector");
     }
 }
