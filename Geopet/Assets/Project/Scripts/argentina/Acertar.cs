@@ -27,7 +27,7 @@ public class Acertar : MonoBehaviour
             transform.position = new Vector2(0f, -4.33f);
             lb.isMoving = false;
             lb.isDragging = false;
-            transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+            transform.localScale = new Vector3(0.4287868f, 0.4287868f, 0.4287868f);
 
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
@@ -49,7 +49,7 @@ public class Acertar : MonoBehaviour
             transform.position = new Vector2(0f, -4.33f);
             lb.isMoving = false;
             lb.isDragging = false;
-            transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+            transform.localScale = new Vector3(0.4287868f, 0.4287868f, 0.4287868f);
 
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
