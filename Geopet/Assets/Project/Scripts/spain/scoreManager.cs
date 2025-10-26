@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -18,6 +19,7 @@ public class ScoreManager : MonoBehaviour
     private int goodHits = 0;
     private int okHits = 0;
     private int misses = 0;
+    public GameObject panelFinal;
 
     void Start()
     {
@@ -108,5 +110,19 @@ public class ScoreManager : MonoBehaviour
         Debug.Log("Good: " + goodHits);
         Debug.Log("OK: " + okHits);
         Debug.Log("Miss: " + misses);
+    }
+
+    private void Update()
+    {
+        if (score > 3000)
+        {
+            panelFinal.SetActive(true);
+            Time.timeScale = 0;
+
+        }
+    }
+    public void ahorcadoEspaña()
+    {
+        SceneManager.LoadScene("ahorcadoEspaña");
     }
 }
