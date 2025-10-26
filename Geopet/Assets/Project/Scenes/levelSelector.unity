@@ -739,17 +739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21349b01f0b0b74fbec9f1c5af07068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "buttonEspa\xF1a": {fileID: 1404447767}
-  buttonJapon: {fileID: 1614700348}
-  buttonArgentina: {fileID: 392384456}
-  buttonItalia: {fileID: 2007507682}
-  buttonAustralia: {fileID: 992165004}
-  "spriteEspa\xF1aCompletado": {fileID: 3950588407281591785, guid: 04b9076d5efd65c4d997e4ddeb714d9b, type: 3}
-  spriteJaponCompletado: {fileID: -1275710197475783505, guid: d9c760fdf83e9cd41a206c9797594a40, type: 3}
-  spriteArgentinaCompletado: {fileID: -981155214868002354, guid: 9692e09fdb7ba554fa4c8e42e03c3b8a, type: 3}
-  spriteItaliaCompletado: {fileID: 0}
-  spriteAustraliaCompletado: {fileID: -9064017571745718108, guid: ee5ed88e62ca44c47b6b0e2e934e568a, type: 3}
-  color: {r: 1, g: 1, b: 1, a: 1}
   totalCoins: 0
 --- !u!4 &419789715
 Transform:
@@ -2055,6 +2044,17 @@ MonoBehaviour:
   canAustralia: 1
   canJapan: 1
   canArgentina: 1
+  "buttonEspa\xF1a": {fileID: 1404447767}
+  buttonJapon: {fileID: 1614700348}
+  buttonArgentina: {fileID: 392384456}
+  buttonItalia: {fileID: 2007507682}
+  buttonAustralia: {fileID: 992165004}
+  "spriteEspa\xF1aCompletado": {fileID: 3950588407281591785, guid: 04b9076d5efd65c4d997e4ddeb714d9b, type: 3}
+  spriteJaponCompletado: {fileID: -1275710197475783505, guid: d9c760fdf83e9cd41a206c9797594a40, type: 3}
+  spriteArgentinaCompletado: {fileID: -981155214868002354, guid: 9692e09fdb7ba554fa4c8e42e03c3b8a, type: 3}
+  spriteItaliaCompletado: {fileID: -5945463086986340831, guid: 922f2a669f6a83742841e0975b46ff15, type: 3}
+  spriteAustraliaCompletado: {fileID: -9064017571745718108, guid: ee5ed88e62ca44c47b6b0e2e934e568a, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2032376084
 Transform:
   m_ObjectHideFlags: 0
