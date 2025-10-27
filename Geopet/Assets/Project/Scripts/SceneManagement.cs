@@ -41,7 +41,7 @@ public class SceneManagement : MonoBehaviour
         if (canSpain)
         {
             SceneManager.LoadScene("juegoEspaña");
-            Time.timeScale = 0;
+            Time.timeScale = 1;
         }
 
 
