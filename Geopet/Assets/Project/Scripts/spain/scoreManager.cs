@@ -20,6 +20,7 @@ public class ScoreManager : MonoBehaviour
     private int okHits = 0;
     private int misses = 0;
     public GameObject panelFinal;
+    public GameObject panelTut;
 
     void Start()
     {
@@ -120,6 +121,12 @@ public class ScoreManager : MonoBehaviour
             Time.timeScale = 0;
 
         }
+    }
+
+    public void empezarPartida()
+    {
+        Time.timeScale = 1;
+        panelTut.SetActive(false);
     }
     public void ahorcadoEspaña()
     {
