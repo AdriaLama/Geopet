@@ -14,6 +14,11 @@ public class SceneManagement : MonoBehaviour
     public GameObject buttonArgentina;
     public GameObject buttonItalia;
     public GameObject buttonAustralia;
+    public GameObject textoEspaña;
+    public GameObject textoJapon;
+    public GameObject textoArgentina;
+    public GameObject textoItalia;
+    public GameObject textoAustralia;
 
     public Sprite spriteEspañaCompletado;
     public Sprite spriteJaponCompletado;
@@ -84,7 +89,7 @@ public class SceneManagement : MonoBehaviour
         {
             buttonEspaña.GetComponent<Image>().sprite = spriteEspañaCompletado;
             buttonEspaña.GetComponent<Image>().color = color;
-
+            textoEspaña.SetActive(false);
             Button btn = buttonEspaña.GetComponent<Button>();
             ColorBlock cb = btn.colors;
             cb.normalColor = color;
@@ -95,7 +100,7 @@ public class SceneManagement : MonoBehaviour
         {
             buttonArgentina.GetComponent<Image>().sprite = spriteArgentinaCompletado;
             buttonArgentina.GetComponent<Image>().color = color;
-
+            textoArgentina.SetActive(false);
             Button btn = buttonArgentina.GetComponent<Button>();
             ColorBlock cb = btn.colors;
             cb.normalColor = color;
@@ -106,7 +111,7 @@ public class SceneManagement : MonoBehaviour
         {
             buttonItalia.GetComponent<Image>().sprite = spriteItaliaCompletado;
             buttonItalia.GetComponent<Image>().color = color;
-
+            textoItalia.SetActive(false);
             Button btn = buttonItalia.GetComponent<Button>();
             ColorBlock cb = btn.colors;
             cb.normalColor = color;
@@ -117,7 +122,7 @@ public class SceneManagement : MonoBehaviour
         {
             buttonAustralia.GetComponent<Image>().sprite = spriteAustraliaCompletado;
             buttonAustralia.GetComponent<Image>().color = color;
-
+            textoAustralia.SetActive(false);
             Button btn = buttonAustralia.GetComponent<Button>();
             ColorBlock cb = btn.colors;
             cb.normalColor = color;
@@ -128,7 +133,7 @@ public class SceneManagement : MonoBehaviour
         {
             buttonJapon.GetComponent<Image>().sprite = spriteJaponCompletado;
             buttonJapon.GetComponent<Image>().color = color;
-
+            textoJapon.SetActive(false);
             Button btn = buttonJapon.GetComponent<Button>();
             ColorBlock cb = btn.colors;
             cb.normalColor = color;

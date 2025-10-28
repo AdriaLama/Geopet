@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using UnityEngine.Events;
+
 
 public class hitSpawner : MonoBehaviour
 {
@@ -14,9 +17,10 @@ public class hitSpawner : MonoBehaviour
     public Color hitColor = Color.green;
     public Color missColor = Color.red;
 
+    public static UnityEvent OnSuccessfulHit = new UnityEvent();
 
     private float spawnTime;
-    private float hitTime;              
+    private float hitTime;
     public bool wasHit = false;
     private SpriteRenderer spriteRenderer;
     private Transform approachCircle;
@@ -97,6 +101,7 @@ public class hitSpawner : MonoBehaviour
     void Hit(string judgment, int points, Color color)
     {
         wasHit = true;
+        OnSuccessfulHit?.Invoke();
 
         if (scoreManager != null)
         {

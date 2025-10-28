@@ -5,7 +5,7 @@ public class cambiarPoses : MonoBehaviour
     public Sprite[] poses;
     private static int currentPoseIndex = 0;
     private SpriteRenderer spriteRenderer;
-    private hitSpawner hs;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -13,16 +13,15 @@ public class cambiarPoses : MonoBehaviour
         if (poses != null && poses.Length > 0)
             spriteRenderer.sprite = poses[currentPoseIndex];
 
-        hs = FindFirstObjectByType<hitSpawner>();
+        hitSpawner.OnSuccessfulHit.AddListener(ChangePose);
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDestroy()
     {
-        if (hs.wasHit)
-        {
-            ChangePose();
-        }
+        hitSpawner.OnSuccessfulHit.RemoveListener(ChangePose);
+
     }
 
     void ChangePose()

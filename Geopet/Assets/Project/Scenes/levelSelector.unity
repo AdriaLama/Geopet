@@ -644,7 +644,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.2784314, g: 0.8392157, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1075,10 +1075,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1739700106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.016168332}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 0, y: -72}
+  m_AnchorMin: {x: 0.042899348, y: 0.11061325}
+  m_AnchorMax: {x: 0.9054005, y: 0.7086134}
+  m_AnchoredPosition: {x: 0.7000122, y: -1.5}
+  m_SizeDelta: {x: -4.970001, y: -2.8899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &623924570
 MonoBehaviour:
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Els botons negres representen llocs que es poden entrar en pressionar-los,
+  m_text: "Els botons de colors representen llocs que es poden entrar en pressionar-los,
     i haur\xE0s de passar els minijocs per aconseguir monedes. Un cop completats,
     et sortir\xE0 la bandera del lloc que has completat"
   m_isRightToLeft: 0
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
+  m_fontSize: 20.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1215,10 +1215,10 @@ RectTransform:
   - {fileID: 1962683656}
   m_Father: {fileID: 59300221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.15, y: -102.6}
-  m_SizeDelta: {x: 71.7, y: 19}
+  m_AnchorMin: {x: 0.66249996, y: 0.305}
+  m_AnchorMax: {x: 0.75500005, y: 0.3577773}
+  m_AnchoredPosition: {x: 0.30000305, y: 0.099998474}
+  m_SizeDelta: {x: -2.300003, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812919235
 MonoBehaviour:
@@ -1296,8 +1296,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3181584220273251205, guid: 44e7cc1d0ea9d3241aee945085f3c715, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1514,7 +1514,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0, g: 0.023529412, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1753,10 +1753,10 @@ RectTransform:
   - {fileID: 1662730204}
   m_Father: {fileID: 59300221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36150002, y: 0.18134652}
-  m_AnchorMax: {x: 0.62375, y: 0.53867334}
-  m_AnchoredPosition: {x: -1.5, y: -0.90000916}
-  m_SizeDelta: {x: -11, y: -2.2700043}
+  m_AnchorMin: {x: 0.20887499, y: 0.27022272}
+  m_AnchorMax: {x: 0.80125, y: 0.8158909}
+  m_AnchoredPosition: {x: 1, y: 0.5}
+  m_SizeDelta: {x: -8.660004, y: -1.9899979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082963124
 MonoBehaviour:
@@ -1771,15 +1771,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8836003303255185609, guid: 10ffe51bd39053f40a9c44bec089e482, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1935,7 +1935,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0.79607844, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2068,7 +2068,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2169,10 +2169,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1082963123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.016168332}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 0, y: -72}
+  m_AnchorMin: {x: 0.08359955, y: 0.15179558}
+  m_AnchorMax: {x: 0.8778502, y: 0.71269333}
+  m_AnchoredPosition: {x: -0.5, y: -0.80999756}
+  m_SizeDelta: {x: -4.7599983, y: -3.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662730205
 MonoBehaviour:
@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 29.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2307,10 +2307,10 @@ RectTransform:
   - {fileID: 623924569}
   m_Father: {fileID: 59300221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36150002, y: 0.18134652}
-  m_AnchorMax: {x: 0.62375, y: 0.53867334}
-  m_AnchoredPosition: {x: -1.5, y: -0.90000916}
-  m_SizeDelta: {x: -11, y: -2.2700043}
+  m_AnchorMin: {x: 0.21262498, y: 0.27022272}
+  m_AnchorMax: {x: 0.80125, y: 0.8158909}
+  m_AnchoredPosition: {x: -0.5, y: 0.5}
+  m_SizeDelta: {x: -5.6600037, y: -1.9899979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739700107
 MonoBehaviour:
@@ -2325,15 +2325,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8836003303255185609, guid: 10ffe51bd39053f40a9c44bec089e482, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2381,15 +2381,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8836003303255185609, guid: 10ffe51bd39053f40a9c44bec089e482, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2421,10 +2421,10 @@ RectTransform:
   - {fileID: 1981461163}
   m_Father: {fileID: 59300221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.36150002, y: 0.18134652}
-  m_AnchorMax: {x: 0.62375, y: 0.53867334}
-  m_AnchoredPosition: {x: -1.5, y: -0.90000916}
-  m_SizeDelta: {x: -11, y: -2.2700043}
+  m_AnchorMin: {x: 0.20887499, y: 0.27022272}
+  m_AnchorMax: {x: 0.80125, y: 0.8158909}
+  m_AnchoredPosition: {x: 1, y: 0.5}
+  m_SizeDelta: {x: -8.660004, y: -1.9899979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1962683655
 GameObject:
@@ -2594,10 +2594,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1744057129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.016168332}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 0, y: -72}
+  m_AnchorMin: {x: 0.030000001, y: 0.14761329}
+  m_AnchorMax: {x: 0.88614994, y: 0.74140894}
+  m_AnchoredPosition: {x: 0.6000061, y: -1}
+  m_SizeDelta: {x: -5.2300034, y: -3.0599976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981461164
 MonoBehaviour:
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
+  m_fontSize: 22.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2739,11 +2739,16 @@ MonoBehaviour:
   buttonArgentina: {fileID: 392384456}
   buttonItalia: {fileID: 0}
   buttonAustralia: {fileID: 992165004}
-  "spriteEspa\xF1aCompletado": {fileID: 3950588407281591785, guid: 04b9076d5efd65c4d997e4ddeb714d9b, type: 3}
-  spriteJaponCompletado: {fileID: -1275710197475783505, guid: d9c760fdf83e9cd41a206c9797594a40, type: 3}
-  spriteArgentinaCompletado: {fileID: -981155214868002354, guid: 9692e09fdb7ba554fa4c8e42e03c3b8a, type: 3}
+  "textoEspa\xF1a": {fileID: 538913898}
+  textoJapon: {fileID: 201437618}
+  textoArgentina: {fileID: 866649800}
+  textoItalia: {fileID: 0}
+  textoAustralia: {fileID: 187738425}
+  "spriteEspa\xF1aCompletado": {fileID: 6992687647363354736, guid: e510d02f20db035459fd280d2be08750, type: 3}
+  spriteJaponCompletado: {fileID: -7821892325981882515, guid: 16ebf28d1f96c74448fa53ab1cd4c48b, type: 3}
+  spriteArgentinaCompletado: {fileID: 5609499476334429403, guid: cb5f19c3b9ed06044859a910cba7bf92, type: 3}
   spriteItaliaCompletado: {fileID: -5945463086986340831, guid: 922f2a669f6a83742841e0975b46ff15, type: 3}
-  spriteAustraliaCompletado: {fileID: -9064017571745718108, guid: ee5ed88e62ca44c47b6b0e2e934e568a, type: 3}
+  spriteAustraliaCompletado: {fileID: 3069032890123759125, guid: 56368197b905c0445929692cef64a6df, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2032376084
 Transform:
@@ -2777,6 +2782,13 @@ MonoBehaviour:
   - {fileID: 1739700105}
   - {fileID: 1744057126}
   button: {fileID: 812919233}
+  currentPanel: 0
+  gato: {fileID: 525090411}
+  fondo: {fileID: 1378422648}
+  "buttonEspa\xF1a": {fileID: 1404447769}
+  buttonJapon: {fileID: 1614700350}
+  buttonArgentina: {fileID: 392384458}
+  buttonAustralia: {fileID: 992165006}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

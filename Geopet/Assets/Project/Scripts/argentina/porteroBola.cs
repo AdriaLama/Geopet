@@ -15,12 +15,14 @@ public class porteroBola : MonoBehaviour
     private Vector3 targetPos;
     private Vector3 startPosition;
     private Vector3 bolaStartPos;
+    private Animator anim;
 
     void Start()
     {
         lb = FindFirstObjectByType<LanzarBola>();
         startPosition = transform.position;
         bolaStartPos = bola.position;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,7 +51,7 @@ public class porteroBola : MonoBehaviour
         if (diving)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-
+            anim.SetBool("Estirado", true);
             Quaternion desiredRotation = Quaternion.Euler(0, 0, targetRotation);
             transform.rotation = Quaternion.Slerp(transform.rotation, desiredRotation, rotationSpeed * Time.deltaTime);
 
@@ -63,6 +65,7 @@ public class porteroBola : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, neutralRotation, rotationSpeed * Time.deltaTime);
             transform.position = startPosition;
             bolaStartPos = bola.position;
+            anim.SetBool("Estirado", false);
         }
     }
 }
