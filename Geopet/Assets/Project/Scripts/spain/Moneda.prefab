@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9142473326279935246}
   - component: {fileID: 3192590415976117386}
   - component: {fileID: 265743482518857479}
-  - component: {fileID: -77591895381762783}
   - component: {fileID: -1470171830022024056}
   m_Layer: 0
   m_Name: Moneda
@@ -154,18 +153,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-77591895381762783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157572374105684191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-1470171830022024056
 MonoBehaviour:
   m_ObjectHideFlags: 0

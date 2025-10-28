@@ -29,12 +29,30 @@ public class PanelsLevelSelector : MonoBehaviour
         currentPanel = 0;
 
         if (PlayerPrefs.GetInt("finalPanel") == 1)
-        {  
+        {
+            
+            foreach (GameObject panel in panels)
+            {
+                if (panel != null)
+                    panel.SetActive(false);
+            }
+
             button.SetActive(false);
-            return; 
+            currentPanel = panels.Length; 
+            SetImageColor(fondo, normal);
+            SetImageColor(gato, normal);
+            SetImageColor(buttonEspaña.gameObject, normal, alphaNormal);
+            SetImageColor(buttonJapon.gameObject, normal, alphaNormal);
+            SetImageColor(buttonArgentina.gameObject, normal, alphaNormal);
+            SetImageColor(buttonAustralia.gameObject, normal, alphaNormal);
+            SetButtonTrue();
+
+           
+            return;
         }
 
-        
+
+
         if (panels.Length > 0 && panels[0] != null)
         {
             panels[0].SetActive(true);
@@ -66,11 +84,9 @@ public class PanelsLevelSelector : MonoBehaviour
         }
         else
         {
-            
             button.SetActive(false);
             PlayerPrefs.SetInt("finalPanel", 1);
-            ps.canEnterPetSelector = true;
-          
+            
         }
 
         UpdateVisuals();

@@ -214,6 +214,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1719257210}
+  - {fileID: 1841805904}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1486,7 +1487,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: f1e01b6b6cd34c649887382140018b19, type: 2}
   artworkSprite: {fileID: 1283594051}
-  canEnterPetSelector: 0
 --- !u!212 &1283594051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2107,8 +2107,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1841805904}
+  m_Children: []
   m_Father: {fileID: 116250566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2290,12 +2289,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1719257210}
+  m_Father: {fileID: 116250566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.74125004, y: 0.88000005}
   m_AnchorMax: {x: 0.99375015, y: 0.98888886}
-  m_AnchoredPosition: {x: 0.6999817, y: -0.2566986}
-  m_SizeDelta: {x: -2, y: 1.0108948}
+  m_AnchoredPosition: {x: 0.7000427, y: -0.2999878}
+  m_SizeDelta: {x: -2, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841805905
 MonoBehaviour:
