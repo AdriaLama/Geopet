@@ -29,8 +29,7 @@ public class PanelsLevelSelector : MonoBehaviour
         currentPanel = 0;
 
         if (PlayerPrefs.GetInt("finalPanel") == 1)
-        {
-            gameObject.SetActive(false);
+        {  
             button.SetActive(false);
             return; 
         }
@@ -67,7 +66,7 @@ public class PanelsLevelSelector : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            
             button.SetActive(false);
             PlayerPrefs.SetInt("finalPanel", 1);
             ps.canEnterPetSelector = true;
