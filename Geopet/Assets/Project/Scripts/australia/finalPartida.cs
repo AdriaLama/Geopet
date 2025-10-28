@@ -22,6 +22,7 @@ public class finalPartida : MonoBehaviour
         if (collision.gameObject.CompareTag("Final"))
         {
             panelFinal.SetActive(true);
+            Time.timeScale = 1;
         }
     }
 
