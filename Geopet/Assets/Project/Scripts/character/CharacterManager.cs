@@ -18,16 +18,12 @@ public class CharacterManager : MonoBehaviour
         characterDB.LoadUnlockStates();
 
         if (!PlayerPrefs.HasKey("selectedOption"))
-        {
             selectedOption = 0;
-            Save(); // Guardar el valor inicial
-        }
         else
-        {
             Load();
-        }
 
         updateCharacter(selectedOption);
+
 
         if (buyButton != null)
             buyButton.onClick.AddListener(BuyCharacter);
@@ -35,8 +31,10 @@ public class CharacterManager : MonoBehaviour
             selectButton.onClick.AddListener(SelectCharacter);
     }
 
+
     private void Update()
     {
+
         UpdateBuyButtonState();
     }
 
@@ -45,7 +43,6 @@ public class CharacterManager : MonoBehaviour
         selectedOption++;
         if (selectedOption >= characterDB.CharacterCount)
             selectedOption = 0;
-
         updateCharacter(selectedOption);
         Save();
     }
@@ -55,7 +52,6 @@ public class CharacterManager : MonoBehaviour
         selectedOption--;
         if (selectedOption < 0)
             selectedOption = characterDB.CharacterCount - 1;
-
         updateCharacter(selectedOption);
         Save();
     }
@@ -64,17 +60,14 @@ public class CharacterManager : MonoBehaviour
     {
         Character character = characterDB.GetCharacter(selectedOption);
 
-        if (character == null)
-        {
-            Debug.LogError($"Character at index {selectedOption} is null!");
-            return;
-        }
+        if (character == null) return;
 
         artworkSprite.sprite = character.characterSprite;
         nameText.text = character.characterName;
 
         if (character.isUnlocked)
         {
+
             buyButton.gameObject.SetActive(false);
             if (moneda != null)
                 moneda.gameObject.SetActive(false);
@@ -84,6 +77,7 @@ public class CharacterManager : MonoBehaviour
         }
         else
         {
+
             buyButton.gameObject.SetActive(true);
             if (moneda != null)
                 moneda.gameObject.SetActive(true);
@@ -93,6 +87,7 @@ public class CharacterManager : MonoBehaviour
                 priceText.text = character.price.ToString();
             }
             selectButton.gameObject.SetActive(false);
+
 
             UpdateBuyButtonState();
         }
@@ -104,10 +99,13 @@ public class CharacterManager : MonoBehaviour
 
         if (character != null && !character.isUnlocked && buyButton != null)
         {
+
             bool canAfford = gameManager.Instance != null &&
                            gameManager.Instance.totalCoins >= character.price;
 
             buyButton.interactable = canAfford;
+
+
         }
     }
 
@@ -117,11 +115,18 @@ public class CharacterManager : MonoBehaviour
 
         if (character == null || gameManager.Instance == null) return;
 
+
         if (!character.isUnlocked && gameManager.Instance.totalCoins >= character.price)
         {
+
             gameManager.Instance.totalCoins -= character.price;
+
+
             character.isUnlocked = true;
+
+
             characterDB.SaveUnlockState(selectedOption);
+
 
             if (gameManager.Instance != null)
             {
@@ -129,12 +134,12 @@ public class CharacterManager : MonoBehaviour
                 PlayerPrefs.Save();
             }
 
-            // IMPORTANTE: Actualizar la UI después de la compra
+
             updateCharacter(selectedOption);
 
-            // Auto-seleccionar el personaje comprado
-            SelectCharacter();
+
         }
+
     }
 
     public void SelectCharacter()

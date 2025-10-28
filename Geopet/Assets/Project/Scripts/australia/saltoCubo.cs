@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class saltoCubo : MonoBehaviour
@@ -7,12 +8,13 @@ public class saltoCubo : MonoBehaviour
     public float jumpForceSpring;
     private Rigidbody2D rb2D;
     private SpriteRenderer sr;
-
+    private Animator anim;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -39,6 +41,8 @@ public class saltoCubo : MonoBehaviour
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
                 rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                anim.SetBool("Salto", true);
+                StartCoroutine(SaltoOff());
             }
         }
 
@@ -49,8 +53,16 @@ public class saltoCubo : MonoBehaviour
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
                 rb2D.AddForce(Vector2.up * jumpForceSpring, ForceMode2D.Impulse);
+                anim.SetBool("Salto", true);
+                StartCoroutine(SaltoOff());
             }
         }
+    }
+
+    private IEnumerator SaltoOff()
+    {
+        yield return new WaitForSeconds(1.0f);
+        anim.SetBool("Salto", false);
     }
 
    

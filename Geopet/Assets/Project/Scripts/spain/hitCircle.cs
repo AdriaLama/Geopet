@@ -14,9 +14,10 @@ public class hitSpawner : MonoBehaviour
     public Color hitColor = Color.green;
     public Color missColor = Color.red;
 
+
     private float spawnTime;
     private float hitTime;              
-    private bool wasHit = false;
+    public bool wasHit = false;
     private SpriteRenderer spriteRenderer;
     private Transform approachCircle;
     private ScoreManager scoreManager;
@@ -29,7 +30,8 @@ public class hitSpawner : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         scoreManager = FindFirstObjectByType<ScoreManager>();
 
-        
+       
+
         CreateApproachCircle();
     }
 
@@ -91,6 +93,7 @@ public class hitSpawner : MonoBehaviour
         }
     }
 
+ 
     void Hit(string judgment, int points, Color color)
     {
         wasHit = true;
@@ -100,7 +103,6 @@ public class hitSpawner : MonoBehaviour
             scoreManager.AddScore(points, judgment);
         }
 
-        
         spriteRenderer.color = color;
         ShowJudgment(judgment, color);
 
