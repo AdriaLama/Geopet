@@ -6,8 +6,8 @@ public class petLevelSelector : MonoBehaviour
 {
     public CharacterDataBase characterDB;
     public SpriteRenderer artworkSprite;
-    private PanelsLevelSelector ps;
     private int selectedOption = 0;
+    public bool canEnterPetSelector = false;
     void Start()
     {
         if (!PlayerPrefs.HasKey("selectedOption"))
@@ -20,7 +20,7 @@ public class petLevelSelector : MonoBehaviour
             Load();
         }
 
-        ps = FindFirstObjectByType<PanelsLevelSelector>();
+        
         updateCharacter(selectedOption);
     }
 
@@ -37,7 +37,7 @@ public class petLevelSelector : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (ps.currentPanel > 2)
+        if (canEnterPetSelector)
         {
             SceneManager.LoadScene("characterSelector");
         }

@@ -19,10 +19,15 @@ public class PanelsLevelSelector : MonoBehaviour
     private Color oscuro = new Color(0.3f, 0.3f, 0.3f, 1f);   
     private Color normal = Color.white;                      
     private float alphaNormal = 1f;                           
-    private float alphaTransparente = 0.4f;                   
+    private float alphaTransparente = 0.4f;
+
+    private petLevelSelector ps;
 
     void Start()
     {
+
+        currentPanel = 0;
+
         if (PlayerPrefs.GetInt("finalPanel") == 1)
         {
             gameObject.SetActive(false);
@@ -40,7 +45,9 @@ public class PanelsLevelSelector : MonoBehaviour
             button.SetActive(true);
         }
 
-        currentPanel = 0;
+        ps = FindFirstObjectByType<petLevelSelector>();
+
+    
     }
 
     void Update()
@@ -63,6 +70,7 @@ public class PanelsLevelSelector : MonoBehaviour
             gameObject.SetActive(false);
             button.SetActive(false);
             PlayerPrefs.SetInt("finalPanel", 1);
+            ps.canEnterPetSelector = true;
           
         }
 
