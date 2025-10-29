@@ -38,7 +38,7 @@ public class FallingObject : MonoBehaviour
             SoundManager sm = FindFirstObjectByType<SoundManager>();
             if (sm != null)
             {
-                if (esObjetoBueno && !isCoin)
+                if (esObjetoBueno)
                     sm.Sushi();
                 else
                     sm.Fallo();
