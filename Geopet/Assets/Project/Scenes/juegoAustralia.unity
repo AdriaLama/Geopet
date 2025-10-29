@@ -794,6 +794,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (3)
@@ -801,8 +805,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 129121123}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &129121122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 129121121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &129121123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129121122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &132517754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda
@@ -1334,8 +1362,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 232178010}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &232178009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 232178008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &232178010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232178009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &242334668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,33 +1668,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &270445712 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
-  m_PrefabInstance: {fileID: 642585982}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &270445714
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270445712}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8e29b6e44d72b84fb99dee8c03b34ea, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &271320438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2114,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (2)
@@ -2100,8 +2125,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 371979057}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &371979056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 371979055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &371979057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371979056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &400147169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,41 +3291,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 634335044}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
---- !u!1 &634335043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
-  m_PrefabInstance: {fileID: 634335041}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &634335044
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634335043}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8e29b6e44d72b84fb99dee8c03b34ea, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &642585982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3337,13 +3353,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 270445714}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0246bc89b7ffb74fb000668ff838f13, type: 3}
 --- !u!1 &660821914
 GameObject:
@@ -5567,6 +5581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (4)
@@ -5574,8 +5592,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1062829476}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &1062829475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 1062829474}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1062829476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062829475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1084993536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5757,6 +5795,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (5)
@@ -5764,8 +5806,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1085668589}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &1085668588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 1085668587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1085668589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085668588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101732956
 GameObject:
   m_ObjectHideFlags: 0
@@ -7292,6 +7354,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (6)
@@ -7299,8 +7365,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1300992106}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &1300992105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 1300992104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1300992106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300992105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1338618378
 GameObject:
   m_ObjectHideFlags: 0
@@ -11378,6 +11464,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4671906542512554493, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
       propertyPath: m_Name
       value: Moneda (1)
@@ -11385,8 +11475,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2039875495}
   m_SourcePrefab: {fileID: 100100000, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+--- !u!1 &2039875494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8157572374105684191, guid: 9e1fc13c4bb8aab409d9e5fa2807a349, type: 3}
+  m_PrefabInstance: {fileID: 2039875493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2039875495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039875494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96775c5a5c0890f4b830e0b4f96fcff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2040804834
 GameObject:
   m_ObjectHideFlags: 0
