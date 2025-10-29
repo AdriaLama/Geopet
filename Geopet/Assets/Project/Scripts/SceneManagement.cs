@@ -19,6 +19,7 @@ public class SceneManagement : MonoBehaviour
     public GameObject textoArgentina;
     public GameObject textoItalia;
     public GameObject textoAustralia;
+    public GameObject panelPausa;
 
     public Sprite spriteEspañaCompletado;
     public Sprite spriteJaponCompletado;
@@ -82,6 +83,32 @@ public class SceneManagement : MonoBehaviour
         }
 
 
+    }
+
+    public void PauseGame()
+    {
+        if (!panelPausa.activeInHierarchy)
+        {
+            panelPausa.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
+    public void Continue()
+    {
+        Time.timeScale = 1;
+        panelPausa.SetActive(false);
+    }
+
+    public void ExitLevel()
+    {
+
+        SceneManager.LoadScene("levelSelector");
+    }
+    public void ExitMenu()
+    {
+
+        SceneManager.LoadScene("menuPrincipal");
     }
     public void changeFlags()
     {

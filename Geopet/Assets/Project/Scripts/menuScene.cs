@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class menuScene : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject panelSettings;
     void Start()
     {
 
@@ -25,5 +25,15 @@ public class menuScene : MonoBehaviour
         Time.timeScale = 1;
         Application.Quit();
 
+    }
+
+    public void Settings()
+    {
+        panelSettings.SetActive(true);
+    } 
+
+    public void closeSettings()
+    {
+        panelSettings.SetActive(false);
     }
 }
