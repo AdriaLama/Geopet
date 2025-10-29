@@ -7,6 +7,7 @@ public class GameManagerArgentina : MonoBehaviour
     private textoScore ts;
     public GameObject panelFinal;
     public GameObject panelTut;
+    public bool isWin = false;
     void Start()
     {
         ts = FindFirstObjectByType<textoScore>();
@@ -25,13 +26,20 @@ public class GameManagerArgentina : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     private void Update()
     {
         if (ts.score >= 7)
         {
             panelFinal.SetActive(true);
+            SoundManager sm = FindFirstObjectByType<SoundManager>();
+
+            if (sm != null)
+            {
+                sm.Victoria();
+            }
             Time.timeScale = 0;
+            
         }
     }
     public void ahorcadoArgentina()

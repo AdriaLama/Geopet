@@ -8,6 +8,7 @@ public class LanzarBola : MonoBehaviour
     private Vector2 startPos;
     public bool isDragging = false;
     public bool isMoving = false;
+    public bool isKick;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class LanzarBola : MonoBehaviour
         rb.linearVelocity = direction * speed;
         isDragging = false;
         isMoving = true;
+        isKick = true;
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class LanzarBola : MonoBehaviour
         if (isMoving)
         {
             transform.localScale -= Vector3.one * shrinkRate * Time.deltaTime;
+            isKick = false;
 
             if (transform.localScale.x < 0.1f)
             {

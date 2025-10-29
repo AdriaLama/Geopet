@@ -112,6 +112,8 @@ public class manager : MonoBehaviour
             {
                 tmp.color = Color.green;
                 panel.SetActive(true);
+                SoundManager sm = FindFirstObjectByType<SoundManager>();
+                sm.Victoria();
             }
             Invoke("InitialiseGame", 3f);
         }

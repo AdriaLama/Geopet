@@ -79,21 +79,27 @@ public class hitSpawner : MonoBehaviour
 
         float timeDiff = Mathf.Abs(Time.time - hitTime);
 
+        SoundManager sm = FindFirstObjectByType<SoundManager>();
+            
         if (timeDiff <= perfectWindow)
         {
             Hit("PERFECT!", 300, hitColor);
+            sm.Palmadas();
         }
         else if (timeDiff <= goodWindow)
         {
             Hit("GOOD", 100, Color.cyan);
+            sm.Palmadas();
         }
         else if (timeDiff <= okWindow)
         {
             Hit("OK", 50, Color.yellow);
+            sm.Palmadas();
         }
         else
         {
             Miss();
+            sm.Fallo();
         }
     }
 

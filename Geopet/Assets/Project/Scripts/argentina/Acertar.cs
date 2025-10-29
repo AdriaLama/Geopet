@@ -7,7 +7,8 @@ public class Acertar : MonoBehaviour
     public int score = 0;
     private textoScore ts;
     private movAcertar ma;
-    private generarMoneda gm; 
+    private generarMoneda gm;
+    public bool acertado;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class Acertar : MonoBehaviour
             lb.isMoving = false;
             lb.isDragging = false;
             transform.localScale = new Vector3(0.4287868f, 0.4287868f, 0.4287868f);
-
+            acertado = true;
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
 
@@ -36,8 +37,10 @@ public class Acertar : MonoBehaviour
             ma.speed += 0.5f;
             gm.Generar();
 
-            if(gm.isMoneda)
+            if (gm.isMoneda)
             {
+                SoundManager sm = FindFirstObjectByType<SoundManager>();
+                sm.Moneda();
                 gameManager.Instance.AddCoins(5);
                 gm.isMoneda = false;
             }

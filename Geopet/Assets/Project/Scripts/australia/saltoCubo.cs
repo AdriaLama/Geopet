@@ -34,12 +34,17 @@ public class saltoCubo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        SoundManager sm = FindFirstObjectByType<SoundManager>();
+
         if (collision.gameObject.CompareTag("Plataforma"))
         {       
             ContactPoint2D contact = collision.contacts[0];
           
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
+               
+                sm.Canguro();
                 rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 anim.SetBool("Salto", true);
                 StartCoroutine(SaltoOff());
@@ -52,6 +57,7 @@ public class saltoCubo : MonoBehaviour
 
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
+                sm.Colchoneta();
                 rb2D.AddForce(Vector2.up * jumpForceSpring, ForceMode2D.Impulse);
                 anim.SetBool("Salto", true);
                 StartCoroutine(SaltoOff());

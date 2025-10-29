@@ -10,7 +10,11 @@ public class FallingObject : MonoBehaviour
 
     [Header("Límite de destrucción")]
     public float limiteBajo = -6f;
-  
+
+    private void Start()
+    {
+       
+    }
     void Update()
     {
         
@@ -31,8 +35,18 @@ public class FallingObject : MonoBehaviour
         {
             JaponGameManager.instance.AgregarPuntos(puntos);
 
+            SoundManager sm = FindFirstObjectByType<SoundManager>();
+            if (sm != null)
+            {
+                if (esObjetoBueno && !isCoin)
+                    sm.Sushi();
+                else
+                    sm.Fallo();
+            }
+
             if (isCoin)
             {
+                sm.Moneda();
                 gameManager.Instance.AddCoins(5);
                 Destroy(gameObject);
             }

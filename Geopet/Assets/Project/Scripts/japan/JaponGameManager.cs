@@ -52,6 +52,13 @@ public class JaponGameManager : MonoBehaviour
     {
         if (puntuacionActual >= 250)
         {
+            SoundManager sm = FindFirstObjectByType<SoundManager>();
+
+            if (sm != null)
+            {
+                sm.Victoria();
+            }
+
             panelFinal.SetActive(true);
             Time.timeScale = 0;
         }

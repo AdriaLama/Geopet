@@ -17,6 +17,8 @@ public class monedas : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")){
+            SoundManager sm = FindFirstObjectByType<SoundManager>();
+            sm.Moneda();
             gameManager.Instance.AddCoins(5);
             Destroy(gameObject);
         }
