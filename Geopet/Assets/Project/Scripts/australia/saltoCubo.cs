@@ -10,6 +10,11 @@ public class saltoCubo : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+   
+    private float moveDirection = 0f;
+    private bool isTouching = false;
+    public float deadZoneRadius = 100f; 
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -17,10 +22,25 @@ public class saltoCubo : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    void Update()
+    {
+        HandleMobileInput();
+    }
+
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        rb2D.linearVelocity = new Vector2(horizontal * speed, rb2D.linearVelocityY);
+        float horizontal = 0f;
+
+        
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        
+        if (isTouching)
+        {
+            horizontal = moveDirection;
+        }
+
+        rb2D.linearVelocity = new Vector2(horizontal * speed, rb2D.linearVelocity.y);
 
         if (horizontal > 0)
         {
@@ -32,15 +52,69 @@ public class saltoCubo : MonoBehaviour
         }
     }
 
+    void HandleMobileInput()
+    {
+        
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            
+            Vector3 playerScreenPos = Camera.main.WorldToScreenPoint(transform.position);
+            float touchX = touch.position.x;
+
+            
+            float distance = Mathf.Abs(touchX - playerScreenPos.x);
+
+            
+            if (distance < deadZoneRadius)
+            {
+                
+                if (isTouching)
+                {
+                    isTouching = false;
+                    moveDirection = 0f;
+                }
+                return; 
+            }
+
+            
+            isTouching = true;
+
+            
+            if (touchX < playerScreenPos.x)
+            {
+                moveDirection = -1f;
+            }
+            
+            else
+            {
+                moveDirection = 1f;
+            }
+
+            
+            if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+            {
+                isTouching = false;
+                moveDirection = 0f;
+            }
+        }
+        else
+        {
+            isTouching = false;
+            moveDirection = 0f;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
         SoundManager sm = FindFirstObjectByType<SoundManager>();
 
         if (collision.gameObject.CompareTag("Plataforma"))
-        {       
+        {
             ContactPoint2D contact = collision.contacts[0];
-          
+
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
                
@@ -50,11 +124,9 @@ public class saltoCubo : MonoBehaviour
                 StartCoroutine(SaltoOff());
             }
         }
-
         if (collision.gameObject.CompareTag("Muelle"))
         {
             ContactPoint2D contact = collision.contacts[0];
-
             if (Vector2.Dot(contact.normal, Vector2.up) > 0.5f)
             {
                 sm.Colchoneta();
@@ -70,6 +142,4 @@ public class saltoCubo : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         anim.SetBool("Salto", false);
     }
-
-   
 }
