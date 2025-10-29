@@ -19,21 +19,17 @@ MonoBehaviour:
     isUnlocked: 1
   - characterName: "Gat Japon\xE8s"
     characterSprite: {fileID: 1364548974615230521, guid: aec7c9556ccae9544804407795d8c477, type: 3}
-    price: 100
-    isUnlocked: 1
+    price: 50
+    isUnlocked: 0
   - characterName: "Gat Argent\xED"
     characterSprite: {fileID: -3599355464255341748, guid: 0a871d1953ac12849b260b28c8bc5091, type: 3}
-    price: 100
-    isUnlocked: 1
+    price: 50
+    isUnlocked: 0
   - characterName: Gat Espanyol
     characterSprite: {fileID: -349416926215829899, guid: 8c8453521ed3435409cac94b3552e268, type: 3}
-    price: 100
-    isUnlocked: 1
+    price: 50
+    isUnlocked: 0
   - characterName: "Gat Australi\xE0"
     characterSprite: {fileID: 2058894110878990958, guid: 7d7e03dffcf8f6b44ab68250679eac0e, type: 3}
-    price: 100
-    isUnlocked: 1
-  - characterName: "Gat Itali\xE0"
-    characterSprite: {fileID: 9141206278562502306, guid: 764cf0189b1a935429a78da43df6b496, type: 3}
-    price: 100
-    isUnlocked: 1
+    price: 50
+    isUnlocked: 0

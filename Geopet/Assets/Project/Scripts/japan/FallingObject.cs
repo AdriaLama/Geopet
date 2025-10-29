@@ -9,8 +9,8 @@ public class FallingObject : MonoBehaviour
     public bool isCoin;
 
     [Header("Límite de destrucción")]
-    public float limiteBajo = -6f; 
-
+    public float limiteBajo = -6f;
+  
     void Update()
     {
         
@@ -21,6 +21,7 @@ public class FallingObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -28,7 +29,6 @@ public class FallingObject : MonoBehaviour
         
         if (collision.CompareTag("Cesta"))
         {
-            
             JaponGameManager.instance.AgregarPuntos(puntos);
 
             if (isCoin)

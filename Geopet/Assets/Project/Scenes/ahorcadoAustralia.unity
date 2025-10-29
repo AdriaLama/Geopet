@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1ENDEVINA EL PA\xCDS!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.5
+  m_fontSize: 39.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -420,8 +420,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1HAS GUANYAT!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.3
+  m_fontSize: 31.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -684,8 +684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordContainer: {fileID: 1866833714}
   keyBoardContainer: {fileID: 1029104209}
-  letterContainer: {fileID: 4921239797683616519, guid: e58ef0a2fe310b643ae917ea3c5d06ae, type: 3}
-  letterButton: {fileID: 1641045948702804498, guid: 46efe447d32fe0c4ab297bfac621ce25, type: 3}
+  letterContainer: {fileID: 113419243778357877, guid: 1b2e72daa69a156489e220c727c54bfa, type: 3}
+  letterButton: {fileID: 6440971877891545591, guid: dda0ae786bae6c04886294ec97e8dd19, type: 3}
   panel: {fileID: 601115156}
   possibleWord: {fileID: 4900000, guid: f8f3fa2818c2d3943b8acae108f6915e, type: 3}
   australiaButton: {fileID: 0}
@@ -1168,15 +1168,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "M\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280382862
+  m_fontColor: {r: 0.5568628, g: 0.45882353, b: 0.12941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1193,12 +1193,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.55
+  m_fontSize: 21.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 21.6
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

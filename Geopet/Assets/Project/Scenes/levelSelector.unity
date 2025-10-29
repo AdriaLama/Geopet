@@ -616,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24262495, y: 0.23459259}
   m_AnchorMax: {x: 0.28147918, y: 0.2872963}
-  m_AnchoredPosition: {x: -0.5000305, y: 0.5001221}
+  m_AnchoredPosition: {x: -0.50006104, y: 0.5001221}
   m_SizeDelta: {x: -2.6137695, y: 0.068099976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &392384458
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.55
+  m_fontSize: 20.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1100,19 +1100,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Els botons de colors representen llocs que es poden entrar en pressionar-los,
-    i haur\xE0s de passar els minijocs per aconseguir monedes. Un cop completats,
-    et sortir\xE0 la bandera del lloc que has completat"
+  m_text: "Els botons de colors representen pa\xEFsos que es poden entrar en pressionar-los,
+    haur\xE0s de passar els minijocs per aconseguir monedes. Un cop completats, et
+    sortir\xE0 la bandera del pa\xEDs que has completat"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.75
+  m_fontSize: 22.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1217,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.66249996, y: 0.305}
   m_AnchorMax: {x: 0.75500005, y: 0.3577773}
-  m_AnchoredPosition: {x: 0.30000305, y: 0.099998474}
+  m_AnchoredPosition: {x: 0.2999878, y: 0.1000061}
   m_SizeDelta: {x: -2.300003, y: -5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812919235
@@ -2194,18 +2194,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aquest \xE9s el mapa del m\xF3n, on podrem visitar llocs desconeguts per
-    aprendre sobre aquests llocs"
+  m_text: "Aquest \xE9s el mapa del m\xF3n, on podrem visitar pa\xEFsos desconeguts
+    per aprendre sobre aquests "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.05
+  m_fontSize: 27.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2594,10 +2594,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1744057129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.030000001, y: 0.14761329}
-  m_AnchorMax: {x: 0.88614994, y: 0.74140894}
-  m_AnchoredPosition: {x: 0.6000061, y: -1}
-  m_SizeDelta: {x: -5.2300034, y: -3.0599976}
+  m_AnchorMin: {x: 0.062252875, y: 0.12289425}
+  m_AnchorMax: {x: 0.91189647, y: 0.7084713}
+  m_AnchoredPosition: {x: -0.69999695, y: 0.5999985}
+  m_SizeDelta: {x: -2.2300034, y: -1.0599976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981461164
 MonoBehaviour:
@@ -2619,19 +2619,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Les monedes et serveixen per comprar vestits t\xEDpics dels llocs. Fes
+  m_text: "Les monedes et serveixen per comprar vestits t\xEDpics dels pa\xEDs. Fes
     click a mi i et portar\xE9 al selector de vestits. Podr\xE0s repetir els minijocs
     per aconseguir monedes una altra vegada"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
+  m_sharedMaterial: {fileID: 4338393531054792793, guid: 47e173c88afaec1478abca87a7430c31, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.95
+  m_fontSize: 22.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
